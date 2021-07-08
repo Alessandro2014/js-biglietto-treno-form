@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>biglietto del treno</title>
+</head>
+<body>
+    <main>
+        <!-- SEZIONE DATI UTENTE -->
+        <section class="margin-2">
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="">
+                <label for="name">Nome e Cognome</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="kms">Km da percorrere</label>
+                <input type="number" id="kms" min="10" step="10" value="10">
+            </div>
+            <div>
+                <label for="age">Fascia d'età</label>
+                <select name="age" id="age">
+                    <option value="min">Minorenne</option>
+                    <option value="maj">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+
+                </select>
+            </div>
+            <div>
+                <button type="button" id="generate">Genera</button>
+                <button type="button" id="generate">Annulla</button>
+            </div>
+
+        </section>
+
+        <!-- SEZIONE BIGLIETTO -->
+        <section  class="margin-2">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="">
+                <h3>DETTAGLI PASSEGGERO</h3>
+                <p><strong>NOME PASSEGGERO</strong><span id="passenger-name"></span></p>
+                <p><strong>Offerta</strong><span id="promo"></span></p>
+                <p><strong>Carrozza</strong><span id="car"></span></p>
+                <p><strong>Codice CP</strong><span id="train-number"></span></p>
+                <p><strong>Costo biglietto</strong><span id="price"></span></p>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
