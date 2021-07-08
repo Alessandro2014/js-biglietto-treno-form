@@ -6,7 +6,12 @@
 5 calcolare prezzo del biglietto x kms con messagio di tariffa standard
 6 creazione if con mess e prezzo in caso di minorenni
 7 creazione else if con mess e prezzo in caso di over65
-8 stampo i dati con arrotondamento del prezzo a 2 decimali
+8 inserire codice treno
+9 inserire numero carrozza random
+10 stampare prezzo con due decimali
+11 stampo i dati in HTML
+12 far comparire la sezione emissione biglietto solo al click del button
+13 reset campi al click del button
 */
 
 // AGGANCIO ALLA SEZIONE DATI UTENTE
@@ -48,4 +53,19 @@ button.addEventListener("click", function () {
         console.log(price + discountMessage);
      }
 
+     // NUMERO TRENO E CARROZZA
+     var trainNumber = Math.floor(Math.random() * 2000) +100;
+     var carNumber = Math.floor(Math.random() * 12) +1;
+
+     //PREZZO
+     price = "€ " + price.toFixed(2);
+
+     //STAMPA IN HTML
+     passengerName.innerHTML = " " + nameValue;
+     passengerPromo.innerHTML = " " + discountMessage;
+     passengerCar.innerHTML = " " + carNumber;
+     passengerTrainNumber.innerHTML = " " + trainNumber.toFixed(0);
+     passengerPrice.innerHTML = " " + price;
+     
 });
+
