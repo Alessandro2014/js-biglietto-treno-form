@@ -3,7 +3,7 @@
 2 legare variante ad id della sezione di stampa del biglietto
 3 evento al click del button "genera"
 4 salvataggio dati utente con stampa in console
-5 calcolare prezzo del biglietto con messagio di tariffa standard
+5 calcolare prezzo del biglietto x kms con messagio di tariffa standard
 6 creazione if con mess e prezzo in caso di minorenni
 7 creazione else if con mess e prezzo in caso di over65
 8 stampo i dati con arrotondamento del prezzo a 2 decimali
@@ -34,6 +34,18 @@ button.addEventListener("click", function () {
     console.log(kmsValue);
     console.log(ageValue);
 
+    //CALCOLO PREZZO TARIFFA STANDARD
+    var price = kmsValue * 0.21;
+    var discountMessage = "Tariffa ordinaria";
 
+    //CONDIZIONE PER MINORENNI O OVER65
+     if (ageValue === "minor") {
+         price = price - (price * 20) / 100;
+         discountMessage = "Tariffa minori";
+     } else if (ageValue === "over65") {
+        price = price - (price * 40) / 100;
+        discountMessage = "Tariffa over 65";
+        console.log(price + discountMessage);
+     }
 
 });
