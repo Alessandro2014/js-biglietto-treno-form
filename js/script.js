@@ -19,6 +19,8 @@ var userName = document.getElementById("name");
 var userKms = document.getElementById("kms");
 var userAge = document.getElementById("age");
 var button = document.getElementById("generate");
+var buttonCancelled = document.getElementById("cancelled");
+
 
 // AGGANCIO ALLA SEZIONE DI EMISSIONE BIGLIETTO
 var passengerName = document.getElementById("passenger-name");
@@ -67,10 +69,19 @@ button.addEventListener("click", function () {
      passengerTrainNumber.innerHTML = " " + trainNumber.toFixed(0);
      passengerPrice.innerHTML = " " + price;
 
-      //Aggiungiamo una funzione che ci permetta di resettare i campi del form ai valori originali.
+      //RESET AUTOMATICO AL CLICK DEL TASTO "GENERA"
      userName.value = " ";
      userKms.value = "10";
      userAge.value = "minor";
 });
 
+      //RESET AL CLICK DEL TASTO "ANNULLA"
+buttonCancelled.addEventListener("click", function() {
 
+   passengerName.innerHTML = " ";
+   passengerPromo.innerHTML = " ";
+   passengerCar.innerHTML = " " ;
+   passengerTrainNumber.innerHTML = " ";
+   passengerPrice.innerHTML = " ";
+
+});
