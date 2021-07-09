@@ -11,49 +11,63 @@
 <body>
     <main class="container-fluid bg-red">
         <!-- SEZIONE DATI UTENTE -->
-        <h2 class="padding-2 txt-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-        <section class="section-1 container bg-white txt-center">
-            <div class="row padding-2">
-                <div class="col-xs-12 col-md-4">
-                    <label for="name">Nome e Cognome</label>
-                    <div><input type="text" id="name"></div>
-                </div>
-            
-                <div class="col-xs-12 col-md-4">
-                    <label for="kms">Km da percorrere</label>
-                    <div><input type="number" id="kms" min="10" step="10" value="10"></div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <label for="age">Fascia d'età</label>
-                    <div>
-                        <select name="age" id="age">
-                            <option value="minor">Minorenne</option>
-                            <option value="adult">Maggiorenne</option>
-                            <option value="over65">Over 65</option>
-                        </select>
+        <section class="section-1">
+            <h2 class="py-2 txt-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                <div class="container bg-white txt-center">
+                    <div class="row ">
+                        <div class="col-xs-12 col-md-4  py-1">
+                            <label for="name">Nome e Cognome</label>
+                            <div><input type="text" id="name" class="my-1"></div>
+                        </div>
+                    
+                        <div class="col-xs-12 col-md-4 py-1">
+                            <label for="kms">Km da percorrere</label>
+                            <div><input type="number" id="kms" class="my-1" min="10" step="10" value="10"></div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 py-1">
+                            <label for="age" class="my-1">Fascia d'età</label>
+                            <div>
+                                <select name="age" id="age" class="my-1">
+                                    <option value="minor">Minorenne</option>
+                                    <option value="adult">Maggiorenne</option>
+                                    <option value="over65">Over 65</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 py-1">
+                            <button type="button" id="generate" class="mx-1"><strong>Genera</strong></button>
+                            <button type="button" id="cancelled" class="mx-1"><strong>Annulla</strong></button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12">
-                    <button type="button" id="generate" class="margin-2"><strong>Genera</strong></button>
-                    <button type="button" id="cancelled" class="margin-2"><strong>Annulla</strong></button>
-                </div>
-            </div>
         </section>
 
         <!-- SEZIONE BIGLIETTO -->
-        <section  class="section-2 padding-2 ">
-            <h2 class="txt-center">IL TUO BIGLIETTO</h2>
-            <div class="bg-white padding-2">
-                <h3>DETTAGLI PASSEGGERO</h3>
-                <hr>
-                <p><strong>NOME PASSEGGERO</strong><span id="passenger-name"></span></p>
-                <p><strong>Offerta</strong><span id="promo"></span></p>
-                <p><strong>Carrozza</strong><span id="car"></span></p>
-                <p><strong>Codice CP</strong><span id="train-number"></span></p>
-                <p><strong>Costo biglietto</strong><span id="price"></span></p>
-                <hr>
+        <section  class="section-2">
+            <h2 class="txt-center py-2">IL TUO BIGLIETTO</h2>
+            <div class="container bg-white py-2">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>DETTAGLI PASSEGGERO</h3>
+                    </div>
+                    <div class="col-xs-12 col-md-3 py-1">
+                        <h4>NOME PASSEGGERO</h4><span id="passenger-name"></span>
+                    </div>
+                    <div class="col-xs-12 col-md-2 py-1">
+                        <h4>Offerta</h4><span id="promo"></span>
+                    </div>
+                    <div class="col-xs-12 col-md-2 py-1">
+                        <h4>Carrozza</h4><span id="car"></span>
+                    </div>
+                    <div class="col-xs-12 col-md-2 py-1">
+                        <h4>Codice Treno</h4><span id="train-number"></span>
+                    </div>
+                    <div class="col-xs-12 col-md-2 py-1">
+                        <h4>Costo biglietto</h4><span id="price"></span>
+                    </div>
+    
+                </div>
             </div>
-
         </section>
 
     </main>

@@ -36,7 +36,7 @@ button.addEventListener("click", function () {
     var ageValue = userAge.value;
      // STAMPA RISULTATO IN CONSOLE
     console.log(nameValue);
-    console.log(kmsValue);
+    console.log("km da percorrere " + kmsValue);
     console.log(ageValue);
 
     //CALCOLO PREZZO TARIFFA STANDARD
@@ -54,7 +54,7 @@ button.addEventListener("click", function () {
      }
 
      // NUMERO TRENO E CARROZZA
-     var trainNumber = Math.floor(Math.random() * 2000) +100;
+     var trainNumber = Math.floor(Math.random() * 2000) +1000;
      var carNumber = Math.floor(Math.random() * 12) +1;
 
      //PREZZO
@@ -67,7 +67,7 @@ button.addEventListener("click", function () {
      passengerTrainNumber.innerHTML = " " + trainNumber.toFixed(0);
      passengerPrice.innerHTML = " " + price;
 
-        //Aggiungiamo una funzione che ci permetta di resettare i campi del form ai valori originali.
+      //Aggiungiamo una funzione che ci permetta di resettare i campi del form ai valori originali.
      userName.value = " ";
      userKms.value = "10";
      userAge.value = "minor";

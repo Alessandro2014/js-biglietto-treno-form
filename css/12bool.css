@@ -36,6 +36,58 @@
     text-align: center;
 }
 
+    /* PADDING */
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.px-2 {
+    padding: 0 1rem;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.px-3 {
+    padding: 0 3rem;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+    /* MARGIN */
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.mx-3 {
+    margin: 0 3rem;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
     /* COLUMN AUTO */
 .col-xs {
     flex-grow: 1;

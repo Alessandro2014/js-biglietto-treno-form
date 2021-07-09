@@ -5,24 +5,21 @@
     font-family: sans-serif;
 }
 
-.margin-2 {
-    margin: 2rem;
-}
-
-.padding-2 {
-    padding: 2rem;
-}
-
-div, p {
-    margin-top: 1rem;
+main {
+    height: 100vh;
 }
 
 .section-1 input {
     text-align: center;
 }
 
+
 h2 {
     color: white;
+}
+
+h4 {
+    margin-bottom: 3rem;
 }
 
 .bg-red {
@@ -36,7 +33,7 @@ h2 {
 
 .section-1 label, button {
     color: #B91450;
-    padding: 0.3rem;
+    padding: 0.4rem;
 
 }
 
