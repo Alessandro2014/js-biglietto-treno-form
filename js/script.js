@@ -66,6 +66,11 @@ button.addEventListener("click", function () {
      passengerCar.innerHTML = " " + carNumber;
      passengerTrainNumber.innerHTML = " " + trainNumber.toFixed(0);
      passengerPrice.innerHTML = " " + price;
-     
+
+        //Aggiungiamo una funzione che ci permetta di resettare i campi del form ai valori originali.
+     userName.value = " ";
+     userKms.value = "10";
+     userAge.value = "minor";
 });
+
 
