@@ -23,6 +23,7 @@ var buttonCancelled = document.getElementById("cancelled");
 
 
 // AGGANCIO ALLA SEZIONE DI EMISSIONE BIGLIETTO
+var sectionTicket = document.getElementById("section-ticket")
 var passengerName = document.getElementById("passenger-name");
 var passengerPromo = document.getElementById("promo");
 var passengerCar = document.getElementById("car");
@@ -73,6 +74,9 @@ button.addEventListener("click", function () {
      userName.value = " ";
      userKms.value = "10";
      userAge.value = "minor";
+
+     //COMPARSA SEZIONE "IL TUO BIGLIETTO"
+     sectionTicket.classList.remove("d-none");
 });
 
       //RESET AL CLICK DEL TASTO "ANNULLA"
@@ -80,8 +84,10 @@ buttonCancelled.addEventListener("click", function() {
 
    passengerName.innerHTML = " ";
    passengerPromo.innerHTML = " ";
-   passengerCar.innerHTML = " " ;
+   passengerCar.innerHTML = " ";
    passengerTrainNumber.innerHTML = " ";
    passengerPrice.innerHTML = " ";
 
+   //RIMOZIONE SEZIONE "IL TUO BIGLIETTO"
+   sectionTicket.classList.add("d-none");
 });
